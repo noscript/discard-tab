@@ -1,27 +1,27 @@
 {
-    "manifest_version": 2,
-    "name": "Unload Tab",
-    "description": "Unload tabs to free up resources",
-    "version": "1.2",
+  "manifest_version": 2,
+  "name": "Unload Tab",
+  "description": "Unload tabs to free up resources",
+  "version": "1.2",
 
-    "background": {
-        "scripts": [
-            "background.js"
-        ]
-    },
-
-    "commands": {
-      "unload-tab-c": {
-        "suggested_key": {
-          "default": "Alt+X"
-        },
-        "description": "Unload Current Tab"
-      }
-    },
-
-    "permissions": [
-        "tabs", "http://*/*", "https://*/*",
-        "contextMenus",
-        "activeTab"
+  "background": {
+    "scripts": [
+      "background.js"
     ]
+  },
+
+  "commands": {
+    "unload-tab-c": {
+    "suggested_key": {
+      "default": "Alt+X"
+    },
+    "description": "Unload Current Tab"
+    }
+  },
+
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*",
+    "contextMenus",
+    "activeTab"
+  ]
 }
