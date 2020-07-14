@@ -1,6 +1,6 @@
 browser.contextMenus.create({
-  id: "unload-tab",
-  title: "Unload Tab",
+  id: "discard-tab",
+  title: "Discard Tab",
   contexts: ["tab"]
 });
 
@@ -21,7 +21,7 @@ function discard_to_nearest(tab_to_discard) {
 }
 
 browser.contextMenus.onClicked.addListener((info, tab) => {
-  if (info.menuItemId === "unload-tab") {
+  if (info.menuItemId === "discard-tab") {
     browser.tabs.query({ active: true, currentWindow: true }).then((current_tabs) => {
       if (current_tabs[0].id == tab.id) {
         discard_to_nearest(current_tabs[0]);
@@ -33,7 +33,7 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
 });
 
 browser.commands.onCommand.addListener(function(command) {
-  if (command == "unload-tab-c") {
+  if (command == "discard-tab-command") {
     browser.tabs.query({ active: true, currentWindow: true }).then((current_tabs) => {
       discard_to_nearest(current_tabs[0]);
     })

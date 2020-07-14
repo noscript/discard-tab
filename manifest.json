@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Unload Tab",
-  "description": "Unload tabs to free up resources",
+  "name": "Discard Tab",
+  "description": "Discard tabs to free up resources",
   "version": "1.2",
 
   "background": {
@@ -11,11 +11,11 @@
   },
 
   "commands": {
-    "unload-tab-c": {
+    "discard-tab-command": {
     "suggested_key": {
       "default": "Alt+X"
     },
-    "description": "Unload Current Tab"
+    "description": "Discard Current Tab"
     }
   },
 
