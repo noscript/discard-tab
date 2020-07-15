@@ -4,6 +4,10 @@
   "description": "Discard tabs to free up resources",
   "version": "1.2",
 
+  "icons": {
+    "48": "icon.svg"
+  },
+
   "background": {
     "scripts": [
       "background.js"
