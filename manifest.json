@@ -17,7 +17,7 @@
   "commands": {
     "discard-tab-command": {
     "suggested_key": {
-      "default": "Alt+X"
+      "default": "Alt+U"
     },
     "description": "Discard Current Tab"
     }
